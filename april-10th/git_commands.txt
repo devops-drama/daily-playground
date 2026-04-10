@@ -34,3 +34,10 @@ Push the combined code to GitHub:
 
 Bash
 git push origin main
+
+
+Git Stash Commands
+====================
+git stash
+git stash pop
+git stash apply
