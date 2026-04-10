@@ -36,7 +36,15 @@ Bash
 git push origin main
 
 
+
 ==============
 Without pull 
 =============
+
+=======
+Git Stash Commands
+====================
+git stash
+git stash pop
+git stash apply
 
