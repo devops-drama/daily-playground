@@ -1,0 +1,93 @@
+# Log generator setup
+touch hour_log_gen.py  # Create the Python file for hourly log generation
+ll  # List files in long format to verify the new file exists
+nano hour_log_gen.py  # Open the generator script in the editor for writing
+cat hour_log_gen.py  # Display the contents of the new generator script
+pythn3 hour_log_gen.py  # Typo while trying to execute the script with Python 3
+python3 hour_log_gen.py  # Run the hourly log generator script with Python 3
+ll  # Confirm files after running the script
+ls *sample*  # Search for generated sample files by name pattern
+ls *hour*  # Search for generated hourly log files by name pattern
+ls hour_log_gen.py  # Check that the generator script exists in the current directory
+pwd  # Print the current working directory to confirm location
+
+# System setup: install curl, Node.js, and Gemini CLI
+sudo apt update  # Update package metadata for the system package manager
+sudo apt install -y curl  # Install curl without prompting for confirmation
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -  # Fetch and run the NodeSource setup script for Node.js 20
+sudo apt install -y nodejs  # Install Node.js from the newly added repository
+sudo npm install -g @google/gemini-cli  # Install Gemini CLI globally using npm
+gemini  # Run the installed Gemini CLI to verify it is available
+exit  # Exit the current shell session or terminal
+
+# Miscellaneous shell commands / typos
+pws  # Typo or custom alias attempt; likely intended to inspect the shell state
+ped  # Typo or custom alias attempt; likely not a standard shell command
+pwd  # Print working directory again after returning to the shell
+clear  # Clear the terminal screen for readability
+
+# Install Git and prepare repository workspace
+sudo apt update  # Update apt package lists again before installing git
+sudo apt install git  # Install Git if it is not already installed
+ls  # List files in the current directory
+ll  # Long listing to inspect file sizes and permissions
+cd devops  # Change directory into the devops project folder
+pwd  # Confirm the current directory is /home/google/devops
+mkdir github  # Make a github directory to hold the cloned repo
+https://github.com/devops-drama/daily-playground.git  # History entry showing a URL that was likely opened or copied
+git clone -b feature https://github.com/devops-drama/daily-playground.git  # Clone the feature branch of the repo locally
+ll  # List contents after cloning to verify repo creation
+
+# Git repository setup & initial commit
+git add .  # Stage all local changes in the current repository
+cd daily-playground/  # Enter the cloned repository directory
+git add .  # Stage any changes inside the repository
+git commit -m "Initial commit for day 1"  # Commit the starting files for this repo
+git config --global sp-duta "Suryaprakash Duta"  # Set a custom global git config value for the author name
+git config --global user.email "33519454+sp-duta@users.noreply.github.com"  # Set global git email for commits
+git config --global user.name "Surya"  # Set global git username for git commits
+git commit -m "Initial commit for day 1"  # Commit staged changes again after configuring Git
+git push origin feature  # Push the feature branch to the remote origin repository
+ll  # List the repo contents again after pushing changes
+ls  # List files in the current directory
+git config --global credential.helper 'cache --timeout=3600'  # Cache Git credentials for one hour
+ll  # Verify working tree and repo contents once more
+
+# README and documentation updates
+nano README.md  # Open README.md to edit repository documentation
+git pull origin feature  # Fetch and merge remote changes from the feature branch
+git config --list  # Display current Git configuration settings
+ll  # Check repository contents and file status
+nano README.md  # Re-open README.md to continue editing documentation
+cat README.md  # Show README contents before committing changes
+git add .  # Stage documentation changes for commit
+git commit -m "Updated README.md file"  # Commit the README update
+git push origin feature  # Push the updated README to the remote feature branch
+git pull origin feature  # Pull any new changes from the remote branch
+ll  # List files again after pulling latest updates
+
+# Day-specific notes and workflow commands
+cd april-  # Change into the april- directory (partial directory name used)
+cd april-10th  # Change into the april-10th directory for today's work
+ll  # List files in the april-10th directory
+nano git_commands.txt  # Open git_commands.txt to inspect or edit git workflow notes
+cd ..  # Move back up one directory level
+ll  # List directory contents after leaving april-10th
+git status  # Show current Git status for the repository
+git add .  # Stage any local changes for commit
+git status  # Verify staged changes and repository state again
+git commit -m "Added merge steps to the git_commands.txt"  # Commit merge workflow notes to git_commands.txt
+git push origin feature  # Push the merge steps commit to the remote feature branch
+git pull origin feature  # Pull remote updates again after the push
+cd april-10th  # Re-enter the april-10th working directory
+nano git_commands.txt  # Edit git_commands.txt once more with updated workflow steps
+cd ..  # Move back to the repository root
+git add .  # Stage the updated git_commands.txt and any other changes
+git commit -m "Added stash  steps to the git_commands.txt"  # Commit stash workflow notes to git_commands.txt
+git push origin feature  # Push the stash workflow commit to the feature branch
+
+# Save shell history to file
+history > my_commands.txt  # Dump current shell history into my_commands.txt for review
+ll  # Confirm the new history file exists in the directory
+cat my_commands.txt  # Display the contents of the saved history file
+history 100 > my_commands.txt  # Save the last 100 history entries to my_commands.txt
