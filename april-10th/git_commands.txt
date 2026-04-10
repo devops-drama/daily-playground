@@ -1,3 +1,5 @@
+Below are the steps for clone the repo and add,commit and push
+===============================================================
 git clone -b feature https://github.com/devops-drama/daily-playground.git
 Already Cloned?? -Then pull the latest changes from GitHub
 git pull origin feature
