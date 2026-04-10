@@ -1,2 +1,2 @@
 # daily-playground
-Evry day tasks are updated here.
+Every day tasks are updated here.
