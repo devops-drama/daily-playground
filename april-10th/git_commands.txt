@@ -34,3 +34,9 @@ Push the combined code to GitHub:
 
 Bash
 git push origin main
+
+
+==============
+Without pull 
+=============
+
