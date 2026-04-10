@@ -1,0 +1,11 @@
+git clone -b feature https://github.com/devops-drama/daily-playground.git
+Already Cloned?? -Then pull the latest changes from GitHub
+git pull origin feature
+make changes
+git add .   // it adds everything to staging area
+git commit -m "message"
+git push origin feature
+Enter username and Token // Token can not be seen again in GitHub, so copy it and save it in a safe place
+Cache the token in Terminal for certain time so that you don't have to enter it every time you push changes to GitHub
+git config --global credential.helper 'cache --timeout=36000' //10 hours
+git config --global credential.helper 'cache --timeout=3600' //1 hour
