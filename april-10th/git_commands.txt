@@ -9,3 +9,26 @@ Enter username and Token // Token can not be seen again in GitHub, so copy it an
 Cache the token in Terminal for certain time so that you don't have to enter it every time you push changes to GitHub
 git config --global credential.helper 'cache --timeout=36000' //10 hours
 git config --global credential.helper 'cache --timeout=3600' //1 hour
+
+
+Below are the steps for Merging
+================================
+The Standard Merge Workflow
+If you want to merge your feature branch into main:
+
+Switch to the destination branch:
+
+Bash
+git checkout main
+Pull the latest version (optional but recommended):
+
+Bash
+git pull origin main
+Merge the feature branch:
+
+Bash
+git merge feature
+Push the combined code to GitHub:
+
+Bash
+git push origin main
