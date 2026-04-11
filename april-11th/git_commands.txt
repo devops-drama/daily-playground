@@ -1,0 +1,39 @@
+cd Practice
+ls
+mkdir 11aprtask
+cd 11aprtask
+
+# Create log files
+touch app1.log app2.log app3.log
+
+# Add log data
+echo "Job1 SUCCESS" >> app1.log
+echo "Job2 FAILURE" >> app1.log
+
+echo "Job3 SUCCESS" >> app2.log
+echo "Job4 FAILURE" >> app2.log
+
+echo "Job5 SUCCESS" >> app3.log
+echo "Job6 FAILURE" >> app3.log
+
+# View files
+ls
+cat app1.log
+cat *.log
+
+# Extract success logs
+grep "SUCCESS" *.log > success.log
+
+# Check success logs
+ls
+cat success.log
+
+# Extract failure logs
+grep "FAILURE" *.log > failure.log
+
+# (extra step you did)
+touch failure.log
+
+# Check failure logs
+cat failure.log
+ls
