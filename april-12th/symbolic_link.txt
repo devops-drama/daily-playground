@@ -1,0 +1,53 @@
+Explanation of Symbolic Link Task Commands
+
+1. mkdir duplicate_task
+   This command creates a new folder named "duplicate_task".
+
+2. cd duplicate_task
+   This command moves you into the "duplicate_task" folder.
+
+3. echo "Hello World" > file1.txt
+   The echo command prints text.
+   The ">" symbol writes the text into a file.
+   This creates file1.txt with content "Hello World".
+
+4. echo "Hello World" > file2.txt
+   Creates another file with the same content as file1.txt.
+
+5. echo "Different content" > file3.txt
+   Creates a file with different content.
+
+6. echo "Hello World" > file4.txt
+   Creates another duplicate file with same content as file1.txt.
+
+7. cat *.txt
+   The cat command displays file contents.
+   *.txt means all text files in the folder.
+
+8. md5sum *.txt
+   This command generates a hash value for each file.
+   Files with the same hash have the same content.
+
+9. rm file2.txt file4.txt
+   The rm command deletes files.
+   Here, duplicate files are removed while keeping the original file1.txt.
+
+10. ln -s file1.txt file2.txt
+    The ln command creates links.
+    -s means symbolic link.
+    This creates file2.txt as a shortcut pointing to file1.txt.
+
+11. ln -s file1.txt file4.txt
+    Creates another symbolic link pointing to file1.txt.
+
+12. ls -l
+    Lists files in long format.
+    It shows symbolic links using "->" indicating which file they point to.
+
+Summary:
+
+* file1.txt is the original file
+* file2.txt and file4.txt are symbolic links
+* Symbolic links act like shortcuts and save disk space
+* If the original file is deleted, the links will break
+
